@@ -1,10 +1,17 @@
-function loadApps() {
+function getQueryParam(name) {
+    var results = new RegExp('[?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return results ? decodeURIComponent(results[1]) : null;
+  }
+  
+  function loadApps() {
+    var selectedCategory = getQueryParam("category") || "All";
+  
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "content.xml", true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         var parser, xml;
-        if (xhr.responseXML === null || !xhr.responseXML.documentElement) {
+        if (!xhr.responseXML || !xhr.responseXML.documentElement) {
           if (window.DOMParser) {
             parser = new DOMParser();
             xml = parser.parseFromString(xhr.responseText, "application/xml");
@@ -21,22 +28,21 @@ function loadApps() {
         var container = document.getElementById("app-list");
         var categoryBar = document.getElementById("category-bar");
   
-        var categories = { "All": true }; 
+        var categories = { "All": true };
   
         
         for (var i = 0; i < apps.length; i++) {
-          var app = apps[i];
-          var category = app.getElementsByTagName("category")[0].textContent;
-          categories[category] = true;
+          var cat = apps[i].getElementsByTagName("category")[0].textContent;
+          categories[cat] = true;
         }
   
         
-        for (var cat in categories) {
-          if (categories.hasOwnProperty(cat)) {
-            var button = document.createElement("button");
+        for (var c in categories) {
+          if (categories.hasOwnProperty(c)) {
+            var button = document.createElement("a");
             button.className = "category-button";
-            button.setAttribute("data-category", cat);
-            button.innerHTML = cat;
+            button.href = "7.html?category=" + encodeURIComponent(c);
+            button.innerHTML = c;
             categoryBar.appendChild(button);
           }
         }
@@ -51,9 +57,10 @@ function loadApps() {
           var category = app.getElementsByTagName("category")[0].textContent;
           var minVersion = app.getElementsByTagName("min-version")[0].textContent;
   
+          if (selectedCategory !== "All" && category !== selectedCategory) continue;
+  
           var div = document.createElement("div");
           div.className = "app";
-          div.setAttribute("data-category", category);
   
           var html = '' +
             '<img src="' + icon + '" alt="' + title + ' Icon" class="icon">' +
@@ -66,23 +73,6 @@ function loadApps() {
   
           div.innerHTML = html;
           container.appendChild(div);
-        }
-  
-       
-        var buttons = categoryBar.getElementsByTagName("button");
-        for (var b = 0; b < buttons.length; b++) {
-          buttons[b].onclick = function () {
-            var selected = this.getAttribute("data-category");
-            var apps = container.getElementsByTagName("div");
-            for (var a = 0; a < apps.length; a++) {
-              var appCat = apps[a].getAttribute("data-category");
-              if (selected === "All" || appCat === selected) {
-                apps[a].style.display = "";
-              } else {
-                apps[a].style.display = "none";
-              }
-            }
-          };
         }
       }
     };
