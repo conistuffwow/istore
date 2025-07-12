@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <apps>
+    <app>
+        <title>Facebook Messenger</title>
+        <version>2.7.2</version>
+        <icon>icons/messenger6.png</icon>
+        <plist>plists/messenger6.plist</plist>
+        <category>Social Networking</category>
+        <min-version>6.0</min-version>
+    </app>
+    <app>
+        <title>Bacon Reader</title>
+        <version>1.3</version>
+        <icon>icons/bacon.jpg</icon>
+        <plist>plists/bacon.plist</plist>
+        <category>Social Networking</category>
+        <min-version>6.0</min-version>
+    </app>
+    <app>
+        <title>Alien Blue</title>
+        <version>2.8.2</version>
+        <icon>icons/alienblue.jpg</icon>
+        <plist>plists/alienblue.plist</plist>
+        <category>Social Networking</category>
+        <min-version>6.0</min-version>
+    </app>
+    <app>
+        <title>Battleship Craft</title>
+        <version>1.5.2</version>
+        <icon>icons/battleship.jpg</icon>
+        <plist>plists/batteship.plist</plist>
+        <category>Games</category>
+        <min-version>6.0</min-version>
+    </app>
   <app>
     <title>Google Chrome</title>
     <version>37.2062.60</version>
     <icon>icons/Chrome.jpg</icon>
     <plist>plists/Chrome.plist</plist>
     <category>Browser</category>
+    <min-version>6.0</min-version>
   </app>
 </apps>

@@ -15,18 +15,21 @@ function loadApps() {
             var icon = app.getElementsByTagName("icon")[0].textContent;
             var plist = app.getElementsByTagName("plist")[0].textContent;
             var category = app.getElementsByTagName("category")[0].textContent;
+            var minVersion = app.getElementsByTagName("min-version")[0].textContent;
   
             var div = document.createElement("div");
             div.className = "app";
             div.setAttribute("data-category", category);
   
             var html = '' +
-              '<img src="' + icon + '" alt="' + title + ' Icon" class="icon">' +
-              '<div class="details">' +
-                '<h2>' + title + '</h2>' +
-                '<p>Version ' + version + '</p>' +
-                '<a class="install-button" href="itms-services://?action=download-manifest&url=' + plist + '">Install</a>' +
-              '</div>';
+            '<img src="' + icon + '" alt="' + title + ' Icon" class="icon">' +
+            '<div class="details">' +
+            '<h2>' + title + '</h2>' +
+            '<p>Version ' + version + '</p>' +
+            '<p>Requires iOS ' + minVersion + '+</p>' +
+            '<a class="install-button" href="itms-services://?action=download-manifest&url=' + plist + '">Install</a>' +
+            '</div>';
+
   
             div.innerHTML = html;
             container.appendChild(div);
