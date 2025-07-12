@@ -32,6 +32,38 @@
         <category>Games</category>
         <min-version>6.0</min-version>
     </app>
+    <app>
+        <title>Flow Free</title>
+        <version>2.5.1</version>
+        <icon>icons/flowfree.png</icon>
+        <plist>plists/flowfree.plist</plist>
+        <category>Games</category>
+        <min-version>6.0</min-version>
+    </app>
+    <app>
+        <title>Plants VS Zombies</title>
+        <version>4111.1.36</version>
+        <icon>icons/pvz.png</icon>
+        <plist>plists/pvz.plist</plist>
+        <category>Games</category>
+        <min-version>4.1</min-version>
+    </app>
+    <app>
+        <title>Plants VS Zombies HD</title>
+        <version>4111.1.35</version>
+        <icon>icons/pvz.png</icon>
+        <plist>plists/pvzhd.plist</plist>
+        <category>Games</category>
+        <min-version>4.1</min-version>
+    </app>
+    <app>
+        <title>Photoshop Mix</title>
+        <version>24000213</version>
+        <icon>icons/psmix.png</icon>
+        <plist>plists/psmix.plist</plist>
+        <category>Creativity</category>
+        <min-version>8.1</min-version>
+    </app>
   <app>
     <title>Google Chrome</title>
     <version>37.2062.60</version>
