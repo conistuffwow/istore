@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apps>
+  <app>
+    <title>Google Chrome</title>
+    <version>37.2062.60</version>
+    <icon>icons/chrome</icon>
+    <plist>plists/Chrome.plist</plist>
+    <category>Browser</category>
+  </app>
+</apps>

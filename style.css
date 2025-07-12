@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #d6d6d6;
+    color: #333;
+  }
+  
+  #header {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+    border-bottom: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+  
+  #header h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+  }
+  
+  /* App card */
+  .app {
+    background: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: 1px solid #888;
+  }
+  
+  .details {
+    overflow: hidden;
+  }
+  
+  .details h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .details p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 13px;
+  }
+  
+  .install-button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 8px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4cd964), to(#34c759));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #28a745;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  }
+  
