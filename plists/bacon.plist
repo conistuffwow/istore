@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://store.conishadow.ca/ipa/bacon.ipa</string>
+					<string>http://store.conishadow.ca/ipa/bacon.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>https://store.conishadow.ca/icons/bacon.jpg</string>
+					<string>http://store.conishadow.ca/icons/bacon.jpg</string>
 				</dict>
 			</array>
 			<key>metadata</key>
