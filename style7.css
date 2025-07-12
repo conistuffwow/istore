@@ -95,8 +95,8 @@
   .install-button {
     display: inline-block;
     padding: 8px 16px;
-    background: #007aff;
-    color: white;
+    background: transparent;
+    color: #007aff;
     text-decoration: none;
     border-radius: 10px;
     font-weight: 500;
