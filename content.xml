@@ -4,7 +4,7 @@
         <title>Facebook Messenger</title>
         <version>2.7.2</version>
         <icon>icons/messenger6.png</icon>
-        <plist>http://store.conishadow.ca/plists/messenger6.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/messenger6.ipa</ipa>
         <category>Social Networking</category>
         <min-version>6.0</min-version>
     </app>
@@ -12,7 +12,7 @@
         <title>Bacon Reader</title>
         <version>1.3</version>
         <icon>icons/bacon.jpg</icon>
-        <plist>http://store.conishadow.ca/plists/bacon.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/bacon.ipa</ipa>
         <category>Social Networking</category>
         <min-version>6.0</min-version>
     </app>
@@ -20,7 +20,7 @@
         <title>Alien Blue</title>
         <version>2.8.2</version>
         <icon>icons/alienblue.jpg</icon>
-        <plist>http://store.conishadow.ca/plists/alienblue.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/alienblue.ipa</ipa>
         <category>Social Networking</category>
         <min-version>6.0</min-version>
     </app>
@@ -28,7 +28,7 @@
         <title>Battleship Craft</title>
         <version>1.5.2</version>
         <icon>icons/battleship.jpg</icon>
-        <plist>http://store.conishadow.ca/plists/batteship.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/battleship.ipa</ipa>
         <category>Games</category>
         <min-version>6.0</min-version>
     </app>
@@ -36,7 +36,7 @@
         <title>Flow Free</title>
         <version>2.5.1</version>
         <icon>icons/flowfree.png</icon>
-        <plist>http://store.conishadow.ca/plists/flowfree.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/flowfree.ipa</ipa>
         <category>Games</category>
         <min-version>6.0</min-version>
     </app>
@@ -44,7 +44,7 @@
         <title>Plants VS Zombies</title>
         <version>4111.1.36</version>
         <icon>icons/pvz.png</icon>
-        <plist>http://store.conishadow.ca/plists/pvz.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/pvz.ipa</ipa>
         <category>Games</category>
         <min-version>4.1</min-version>
     </app>
@@ -52,7 +52,7 @@
         <title>Plants VS Zombies HD</title>
         <version>4111.1.35</version>
         <icon>icons/pvz.png</icon>
-        <plist>http://store.conishadow.ca/plists/pvzhd.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/pvzhd.ipa</ipa>
         <category>Games</category>
         <min-version>4.1</min-version>
     </app>
@@ -60,16 +60,16 @@
         <title>Photoshop Mix</title>
         <version>24000213</version>
         <icon>icons/psmix.png</icon>
-        <plist>http://store.conishadow.ca/plists/psmix.plist</plist>
+        <ipa>http://store.conishadow.ca/ipa/psmix.ipa</ipa>
         <category>Creativity</category>
         <min-version>8.1</min-version>
     </app>
-  <app>
-    <title>Google Chrome</title>
-    <version>37.2062.60</version>
-    <icon>icons/Chrome.jpg</icon>
-    <plist>http://store.conishadow.ca/plists/Chrome.plist</plist>
-    <category>Browser</category>
-    <min-version>6.0</min-version>
-  </app>
+    <app>
+        <title>Google Chrome</title>
+        <version>37.2062.60</version>
+        <icon>icons/Chrome.jpg</icon>
+        <ipa>http://store.conishadow.ca/ipa/Chrome.ipa</ipa>
+        <category>Browser</category>
+        <min-version>6.0</min-version>
+    </app>
 </apps>
