@@ -41,7 +41,8 @@ function getQueryParam(name) {
           if (categories.hasOwnProperty(c)) {
             var button = document.createElement("a");
             button.className = "category-button";
-            button.href = "7.html?category=" + encodeURIComponent(c);
+            var currentPage = window.location.pathname.split("/").pop();
+            button.href = currentPage + "?category=" + encodeURIComponent(c);
             button.innerHTML = c;
             categoryBar.appendChild(button);
           }
