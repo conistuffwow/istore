@@ -84,7 +84,7 @@ function getQueryParam(name) {
               '<h2>' + title + '</h2>' +
               '<p>Version ' + version + '</p>' +
               '<p>Requires iOS ' + minVersion + '+</p>' +
-              '<a class="install-button" href="itms-services://?action=download-manifest&url=' + plist + '">Install</a>' +
+              '<a class="install-button" href="itms-services://?action=download-manifest&url=' + encodeURIComponent(plist) + '">Install</a>' +
             '</div>';
   
           div.innerHTML = html;
