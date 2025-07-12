@@ -18,27 +18,6 @@
   <div id="app-list"></div>
 
   <script src="js/script.js"></script>
-  <script>
-    (function () {
-      function getiOSVersion() {
-        var match = navigator.userAgent.match(/OS (\d+)_/);
-        return match ? parseInt(match[1], 10) : null;
-      }
-    
-      var iosVersion = getiOSVersion();
-    
-      if (iosVersion >= 7) {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0; i < links.length; i++) {
-          var href = links[i].getAttribute("href");
-          if (href && href.indexOf("itms-services://") === 0 && href.indexOf("url=http://") !== -1) {
-            var fixedHref = href.replace("url=http://", "url=https://");
-            links[i].setAttribute("href", fixedHref);
-          }
-        }
-      }
-    })();
-    </script>
-    
+
 </body>
 </html>
