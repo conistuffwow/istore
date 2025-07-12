@@ -104,27 +104,23 @@
   }
   #category-bar {
     padding: 10px;
-    text-align: center;
     background: #fff;
     border-bottom: 1px solid #ccc;
+    text-align: center;
     position: sticky;
-    top: 44px; /* below nav */
+    top: 44px;
     z-index: 999;
   }
   
-  .category-button {
-    background: #eee;
-    color: #333;
-    font-size: 14px;
+  #category-select {
+    font-size: 16px;
     padding: 6px 12px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 4px;
-    cursor: pointer;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #007aff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    appearance: none;
+    -webkit-appearance: none;
   }
-  
-  .category-button:hover {
-    background: #ddd;
-  }
-  
   

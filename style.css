@@ -72,27 +72,19 @@ body {
   }
   #category-bar {
     padding: 10px;
+    background: #dcdcdc;
+    border-bottom: 1px solid #888;
     text-align: center;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    position: sticky;
-    top: 44px; /* below nav */
-    z-index: 999;
   }
   
-  .category-button {
-    background: #eee;
-    color: #333;
+  #category-select {
     font-size: 14px;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 4px;
-    cursor: pointer;
-  }
-  
-  .category-button:hover {
-    background: #ddd;
+    padding: 6px;
+    border: 2px inset #ccc;
+    border-radius: 4px;
+    background: #f4f4f4;
+    color: #000;
+    font-family: "Helvetica", sans-serif;
   }
   
   

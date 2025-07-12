@@ -37,16 +37,31 @@ function getQueryParam(name) {
         }
   
         
+        var currentPage = window.location.pathname.split("/").pop();
+        var select = document.getElementById("category-select");
+
+
         for (var c in categories) {
-          if (categories.hasOwnProperty(c)) {
-            var button = document.createElement("a");
-            button.className = "category-button";
-            var currentPage = window.location.pathname.split("/").pop();
-            button.href = currentPage + "?category=" + encodeURIComponent(c);
-            button.innerHTML = c;
-            categoryBar.appendChild(button);
-          }
+        if (categories.hasOwnProperty(c)) {
+            var option = document.createElement("option");
+            option.value = c;
+            option.text = c;
+            select.appendChild(option);
         }
+        }
+
+        for (var s = 0; s < select.options.length; s++) {
+        if (select.options[s].value === selectedCategory) {
+            select.selectedIndex = s;
+            break;
+        }
+        }
+
+        select.onchange = function () {
+        var cat = this.value;
+        window.location.href = currentPage + "?category=" + encodeURIComponent(cat);
+        };
+
   
         
         for (var j = 0; j < apps.length; j++) {
