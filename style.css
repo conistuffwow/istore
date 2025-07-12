@@ -70,4 +70,29 @@ body {
     border: 1px solid #28a745;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
   }
+  #category-bar {
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 44px; /* below nav */
+    z-index: 999;
+  }
+  
+  .category-button {
+    background: #eee;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  
+  .category-button:hover {
+    background: #ddd;
+  }
+  
   
